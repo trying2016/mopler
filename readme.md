@@ -54,7 +54,7 @@ func main() {
 
 由于百度不允许在非百度官方网站完成账号的授权，因此需要引导用户完成授权。
 
-**示例见：test/authentication_test.go**
+[示例](test/authentication_test.go)
 
 
 
