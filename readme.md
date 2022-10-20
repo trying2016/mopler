@@ -1,6 +1,6 @@
 # 百度网盘SDK
 
-实现百度网盘的一些接口，整合后方便快速调用，并且支持文件加密。
+实现百度网盘的一些接口，整合后方便快速调用，暂时只支持AES加密。
 
 > 使用sdk前必须获取授权，内置了简化授权、设备码授权实现。
 >
@@ -44,7 +44,7 @@ func main() {
 
 填入正确的信息，此时就可以看到返回了结果：
 
-```json
+```go
 &{BaiduName:风屿7010 NetdiskName: AvatarUrl:https://dss0.bdstatic.com/7Ls0a8Sm1A5BphGlnYG/sys/portrait/item/netdisk.1.1986fe57.bLBgo-alQv_C54a0d5WkDA.jpg VipType:2 Uk101935704420 Errno:0 RequestId:9089383694159695404 Errmsg:succ}
 ```
 
@@ -107,6 +107,10 @@ func main() {
 
 ### 获取用户信息
 
+[示例](test/userinfo_test.go)
+
+
+
 **返回参数**
 
 | 参数        | 说明                                      |
@@ -127,6 +131,8 @@ func main() {
 
 
 ### 获取网盘容量信息
+
+[示例](test/quota_test.go)
 
 **请求参数**
 
@@ -151,6 +157,7 @@ func main() {
 
 
 ### 获取文件列表信息
+[示例](test/filelist_test.go)
 
 **请求参数**
 
@@ -204,6 +211,7 @@ func main() {
 
 
 ### 递归获取文件列表信息
+[示例](test/filelist_test.go)
 
 **请求参数**
 
@@ -254,6 +262,7 @@ func main() {
 
 
 ### 获取文件信息
+[示例](test/filemeta_test.go)
 
 **请求参数**
 
@@ -292,6 +301,7 @@ func main() {
 
 
 ### 文件搜索
+[示例](test/filesearch_test.go)
 
 **请求参数**
 
@@ -343,7 +353,7 @@ func main() {
 ### 文件上传
 
 文件上传默认会递归上传当前文件夹下面的所有文件，可以同时指定多个文件或文件夹，远程路径必须使用绝对路径
-
+[示例](test/upload_test.go)
 
 
 **请求参数**
@@ -410,6 +420,8 @@ func main() {
 ### 下载文件
 
 下载文件有三种方式：根据文件id，下载指定文件路径（不会下载子目录文件），递归下载指定文件路径
+
+[示例](test/download_test.go)
 
 
 
@@ -516,6 +528,8 @@ func main() {
 
 ### 创建网盘文件夹
 
+[示例](test/filemanage_test.go)
+
 **请求参数**
 
 | 参数       | 说明                 |
@@ -543,6 +557,8 @@ func main() {
 
 
 ### 删除文件/文件夹
+
+[示例](test/filemanage_test.go)
 
 **请求参数**
 
@@ -574,6 +590,8 @@ func main() {
 
 ### 重命名文件/文件夹
 
+[示例](test/filemanage_test.go)
+
 **请求参数**
 
 | 参数     | 说明                                                         |
@@ -602,6 +620,8 @@ func main() {
 
 
 ### 移动文件/文件夹
+
+[示例](test/filemanage_test.go)
 
 **请求参数**
 
@@ -633,6 +653,8 @@ func main() {
 
 
 ### 复制文件/文件夹
+
+[示例](test/filemanage_test.go)
 
 **请求参数**
 
@@ -670,6 +692,8 @@ func main() {
 
 
 #### AES
+
+[示例](test/aes_test.go)
 
 | 参数 | 说明                                                         |
 | ------------- | ------------------------------------------------------------ |
