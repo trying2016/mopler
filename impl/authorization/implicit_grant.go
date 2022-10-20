@@ -22,6 +22,7 @@ func NewImplicitGrantImpl() *ImplicitGrant {
 	return &ImplicitGrant{}
 }
 
+// AccessToken 向百度网盘请求Token
 func (g *ImplicitGrant) AccessToken(param any) error {
 	switch param.(type) {
 	case *request.ImplicitGrantReq:
@@ -35,10 +36,12 @@ func (g *ImplicitGrant) AccessToken(param any) error {
 	return nil
 }
 
+// RefreshToken 刷新Token
 func (g *ImplicitGrant) RefreshToken(param any) error {
 	return g.AccessToken(param)
 }
 
+// GetToken 获取Token
 func (g *ImplicitGrant) GetToken() string {
 	return g.AToken
 }

@@ -1,3 +1,4 @@
+// Package response 所有网盘接口返回的定义
 package response
 
 type OauthDeviceCodeResp struct {

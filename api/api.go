@@ -1,4 +1,4 @@
-// Package api 定义所有在使用百度网盘SDK时，可能使用到的方法。
+// Package api 定义百度网盘SDK的接口
 package api
 
 import (

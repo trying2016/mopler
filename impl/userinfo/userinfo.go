@@ -1,3 +1,4 @@
+// Package userinfo 实现获取网盘用户信息
 package userinfo
 
 import (

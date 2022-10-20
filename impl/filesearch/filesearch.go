@@ -1,3 +1,4 @@
+// Package filesearch 实现网盘文件搜索
 package filesearch
 
 import (

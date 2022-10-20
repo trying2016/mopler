@@ -1,3 +1,4 @@
+// Package authorization 实现了百度授权
 package authorization
 
 // QuickToken 快速授权，直接赋予token

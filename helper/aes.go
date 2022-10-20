@@ -1,3 +1,4 @@
+// Package helper 通用的帮助方法
 package helper
 
 import (

@@ -1,3 +1,4 @@
+// Package filemeta 实现获取网盘文件详情
 package filemeta
 
 import (

@@ -1,3 +1,4 @@
+// Package request 所有网盘接口入参的定义
 package request
 
 import "github.com/766800551/mopler/model/response"
