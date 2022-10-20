@@ -1,5 +1,9 @@
 # 百度网盘SDK
-[![Go Reference](https://pkg.go.dev/badge/github.com/766800551/mopler.svg)](https://pkg.go.dev/github.com/766800551/mopler)<br/>
+[![Go Reference](https://pkg.go.dev/badge/github.com/766800551/mopler.svg)](https://pkg.go.dev/github.com/766800551/mopler)
+[![GitHub license](https://img.shields.io/github/license/766800551/mopler?style=flat-square)](https://github.com/766800551/mopler/blob/master/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/766800551/mopler?style=flat-square)](https://github.com/766800551/mopler/issues)
+
+<br/>
 实现百度网盘的一些接口，整合后方便快速调用，暂时只支持AES加密。
 
 > 使用sdk前必须获取授权，内置了简化授权、设备码授权实现。
